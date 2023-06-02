@@ -4,6 +4,7 @@ import com.udea.historiaclinica.DTO.PacienteDTO;
 import com.udea.historiaclinica.service.HistoriaPacienteService;
 import com.udea.historiaclinica.service.PacienteService;
 import lombok.var;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/paciente")
 public class PacienteController {
 
+    @Autowired
     private PacienteService pacienteService;
     private HistoriaPacienteService historiaPacienteService;
 

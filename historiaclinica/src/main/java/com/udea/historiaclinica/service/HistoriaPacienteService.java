@@ -13,6 +13,7 @@ public class HistoriaPacienteService {
     private IHistoriaPaciente iHistoriaPaciente;
 
     public HistoriaPacienteService(IHistoriaPaciente iHistoriaPaciente) {
+
         this.iHistoriaPaciente = iHistoriaPaciente;
     }
 

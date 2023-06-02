@@ -8,7 +8,7 @@ import java.util.List;
 @Repository
 public interface IHistoriaPaciente extends JpaRepository<HistoriaPaciente, Integer> {
 
-    public HistoriaPaciente findHistoriaPacienteByIdHistoria(String idHistoriaPaciente);
+    public HistoriaPaciente findHistoriaPacienteByIdHistoriaPaciente(String idHistoriaPaciente);
     public HistoriaPaciente findHistoriaPacienteByCedulaPaciente(String cedulaPaciente);
     public List<HistoriaPaciente> findAllHistoriaPacienteByCedulaPaciente(String cedulaPaciente);
 }

@@ -33,4 +33,8 @@ public class Doctor {
     @NotNull
     @Column(name="titulo")
     private String titulo;
+
+    public Doctor( ) {
+
+    }
 }

@@ -33,4 +33,7 @@ public class HistoriaPaciente {
     @NotNull
     @Column(name="valoracion")
     private String valoracion;
+    public HistoriaPaciente( ) {
+
+    }
 }

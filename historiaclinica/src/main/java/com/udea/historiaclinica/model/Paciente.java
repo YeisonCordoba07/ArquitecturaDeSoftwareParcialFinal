@@ -30,4 +30,7 @@ public class Paciente {
     @Column(name="correo")
     private String correo;
 
+    public Paciente( ) {
+
+    }
 }

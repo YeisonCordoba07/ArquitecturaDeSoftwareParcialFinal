@@ -1,0 +1,23 @@
+INSERT INTO `historiaclinica`.`paciente` (`cedula`, `nombre`, `apellido`, `correo`)
+VALUES
+    ('11111111', 'Juan', 'Pérez', 'juan@example.com'),
+    ('22222222', 'María', 'López', 'maria@example.com'),
+    ('33333333', 'Carlos', 'González', 'carlos@example.com'),
+    ('44444444', 'Ana', 'Martínez', 'ana@example.com');
+
+
+INSERT INTO `historiaclinica`.`doctor` (`cedula`, `nombre`, `apellido`, `correo`, `titulo`)
+VALUES
+    ('55555555', 'Pedro', 'Ramírez', 'pedro@example.com', 'Médico General'),
+    ('66666666', 'Laura', 'Gómez', 'laura@example.com', 'Pediatra'),
+    ('77777777', 'Ricardo', 'Hernández', 'ricardo@example.com', 'Cirujano'),
+    ('88888888', 'Sofía', 'Fernández', 'sofia@example.com', 'Dermatóloga');
+
+
+INSERT INTO `historiaclinica`.`historia_paciente` (`id_historia_paciente`, `cedula_paciente`, `cedula_doctor`, `fecha`, `valoracion`)
+VALUES
+    ('1', '11111111', '55555555', '2023-05-01', 'Buena'),
+    ('2', '22222222', '66666666', '2023-05-02', 'Regular'),
+    ('3', '33333333', '77777777', '2023-05-03', 'Excelente'),
+    ('4', '44444444', '88888888', '2023-05-04', 'Mala');
+

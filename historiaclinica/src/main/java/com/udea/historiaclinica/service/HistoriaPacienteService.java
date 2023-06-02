@@ -2,6 +2,7 @@ package com.udea.historiaclinica.service;
 
 import com.udea.historiaclinica.model.HistoriaPaciente;
 import com.udea.historiaclinica.repository.IHistoriaPaciente;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -18,7 +19,7 @@ public class HistoriaPacienteService {
     }
 
     public void guardarHistoriaPaciente(HistoriaPaciente historiaPaciente){
-        this.iHistoriaPaciente.save(historiaPaciente);
+        iHistoriaPaciente.save(historiaPaciente);
     }
 
     public List<HistoriaPaciente> findAllHistoriaPaciente(String cedula){

@@ -40,8 +40,6 @@ public class PacienteController {
 
     @PostMapping("/guardar-historia-paciente")
     public void guardarHistoriaPaciente(@RequestBody HistoriaPaciente historiaPaciente){
-        historiaPacienteService.guardarHistoriaPaciente(historiaPaciente);
+       historiaPacienteService.guardarHistoriaPaciente(historiaPaciente);
     }
-
-
 }

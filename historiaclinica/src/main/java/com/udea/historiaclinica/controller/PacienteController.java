@@ -1,6 +1,7 @@
 package com.udea.historiaclinica.controller;
 
 import com.udea.historiaclinica.DTO.PacienteDTO;
+import com.udea.historiaclinica.model.HistoriaPaciente;
 import com.udea.historiaclinica.service.HistoriaPacienteService;
 import com.udea.historiaclinica.service.PacienteService;
 import lombok.var;
@@ -37,10 +38,10 @@ public class PacienteController {
     }
 
 
-    /*@PostMapping("/guardar-historia-paciente")
-    public void guardarHistoriaPaciente(@RequestBody ){
-
-    }*/
+    @PostMapping("/guardar-historia-paciente")
+    public void guardarHistoriaPaciente(@RequestBody HistoriaPaciente historiaPaciente){
+        historiaPacienteService.guardarHistoriaPaciente(historiaPaciente);
+    }
 
 
 }
